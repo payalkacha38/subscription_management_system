@@ -57,7 +57,7 @@ Open in browser:
 
 arduino
 Copy code
-http://localhost/DG_hub
+http://localhost/dg_hub/
 📸 Screenshots
 🔑 Login Page
 

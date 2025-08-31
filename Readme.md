@@ -56,7 +56,7 @@ Start Apache & MySQL in XAMPP/WAMP.
 Open in browser:
 
 arduino
-Copy code
+
 http://localhost/dg_hub/
 📸 Screenshots
 🔑 Login Page

@@ -11,11 +11,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/DG_hub?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/DG_hub?style=flat-square)
 
----
-
-## 🚀 Live Demo  
-🔗 [Click here to view the live demo](http://yourwebsite.com)  
-*(Replace with your hosted project link)*  
 
 ---
 

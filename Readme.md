@@ -79,23 +79,5 @@ This project is licensed under the MIT License – you are free to use, modify, 
 
 👨‍💻 Author
 DG Hub Development Team
-📧 Email: your-email@example.com
-🌐 GitHub: yourusername
-
-yaml
-Copy code
-
----
-
-### ✅ What You Need to Do:
-1. Create a file named `README.md` inside your **DG_hub** folder.  
-2. Paste this full content inside it.  
-3. Replace:
-   - `yourusername` → Your GitHub username  
-   - `your-email@example.com` → Your email  
-   - `http://yourwebsite.com` → Your live site link  
-4. Push to GitHub — your repo will now have a professional README with icons & screenshots.
-
----
-
-Do you want me to **also make this README include a dark-themed header banner with your project name*
+📧 Email: payalkacha38@gmail.com
+🌐 GitHub: payalkacha38

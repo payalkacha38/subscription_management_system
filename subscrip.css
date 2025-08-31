@@ -1,0 +1,171 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #9333ea;
+  --light-bg: #f9fafb;
+  --dark-bg: #121212;
+  --light-card: rgba(255, 255, 255, 0.15);
+  --dark-card: rgba(30, 30, 30, 0.2);
+  --text-light: #333;
+  --text-dark: #fff;
+}
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-light);
+  transition: background 0.3s, color 0.3s;
+  
+  
+  background: url('img10.jpg') no-repeat center center;
+    background-size: cover; /* Makes it cover the entire element */
+    height: 100vh;           /* Full viewport height */
+    width: 100%;             /* Full width */
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255,255,255,0.5);
+  z-index: -1;
+  transition: background 0.3s;
+}
+header {
+  background: linear-gradient(90deg, #045876ff, #02193dff);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between button & icon */
+}
+
+header h1 { margin: 0; font-size: 1.8rem; }
+.toggle-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+}
+.toggle-btn:hover { background: rgba(255,255,255,0.3); transform: rotate(15deg); }
+
+/* Add Subscription Button */
+.add-btn {
+  background: linear-gradient(135deg, #4dd304ff, #7c5002ff);;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+  margin-left: 10px;
+}
+.add-btn:hover { background:linear-gradient(135deg, #088463ff, #5e3c02ff);
+ transform: translateY(-3px);
+    box-shadow: 2px 15px 30px rgba(152, 205, 244, 0.35); }
+
+/* Edit Button */
+.edit-btn {
+  background:  linear-gradient(135deg, #41075cff, #71124bff);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.edit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+    background: linear-gradient(135deg, #40145bff, #2e0667ff);
+}
+
+/* Delete Button */
+.delete-btn {
+  background:linear-gradient(135deg, #d5310cff, #c07b05ff);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.delete-btn:hover { background:linear-gradient(135deg, #5b1403ff, #a66b05ff) ; 
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+    }
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: var(--light-card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  color: var(--text-light);
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+}
+.details { font-size: 0.95rem; line-height: 1.6; }
+.details strong { color: var(--text-light); }
+.action-btns { display: flex; justify-content: space-between; margin-top: 1rem; }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Dark Mode */
+.dark-mode { color: var(--text-dark);
+  background: url('img12.jpg') no-repeat center center/cover;
+   background-size: cover; /* Makes it cover the entire element */
+    height: 100vh;           /* Full viewport height */
+    width: 100%;             /* Full width */
+}
+.dark-mode::before { background: rgba(0,0,0,0.5); }
+.dark-mode header { background: linear-gradient(90deg, #0f172a, #4c1d95); }
+.dark-mode .card { background: var(--dark-card); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-dark); }
+.dark-mode .card:hover { background: rgba(30, 30, 30, 0.3); }
+.dark-mode .details strong { color: var(--text-dark); }

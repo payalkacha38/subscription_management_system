@@ -58,16 +58,6 @@ Open in browser:
 arduino
 
 http://localhost/dg_hub/
-📸 Screenshots
-🔑 Login Page
-
-📊 Dashboard
-
-📦 Subscription List
-
-➕ Add Subscription
-
-👤 Profile Page
 
 📜 License
 This project is licensed under the MIT License – you are free to use, modify, and distribute it.
